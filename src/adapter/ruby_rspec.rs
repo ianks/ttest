@@ -9,7 +9,7 @@ use crate::{
 
 use super::TestAdapter;
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Eq)]
 pub struct RubyRspec {}
 
 impl RubyRspec {

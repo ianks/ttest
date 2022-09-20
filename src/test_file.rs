@@ -5,7 +5,7 @@ use std::{
 };
 
 /// A wrapper around a [`PathBuf`] that has some additional functionality.
-#[derive(Debug, PartialEq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub struct TestFile(PathBuf);
 
 impl TestFile {

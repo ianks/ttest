@@ -6,7 +6,7 @@ use std::{
 
 use crate::test_file::TestFile;
 
-#[derive(Debug, PartialEq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum TestSelector {
     PathWithLineNumber { path: TestFile, line: u32 },
     PathOnly { path: TestFile },

@@ -5,7 +5,7 @@ use bstr::{io::BufReadExt, ByteSlice, Finder};
 use crate::test_file::TestFile;
 
 /// Searches and indexes a test file.
-#[derive(Debug, PartialEq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub struct TestIndex {
     entries: Vec<IndexEntry>,
 }
@@ -49,7 +49,7 @@ impl TestIndex {
 }
 
 /// An indexed test.
-#[derive(Debug, PartialEq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub struct IndexEntry {
     line_number: u32,
     content: String,

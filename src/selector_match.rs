@@ -1,5 +1,5 @@
 /// The type of match that was made for a given selector.
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Eq)]
 pub enum SelectorMatch {
     /// The selector matches, and no further adapters should be checked.
     Exclusive,

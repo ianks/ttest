@@ -77,7 +77,7 @@ macro_rules! define_adapters {
         }
 
         #[enum_dispatch]
-        #[derive(Debug, PartialEq)]
+        #[derive(Debug, PartialEq, Eq)]
         pub enum Adapter { $($value($value),)* }
 
         /// Get a list of all adapters.

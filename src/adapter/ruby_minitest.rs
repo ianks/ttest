@@ -12,7 +12,7 @@ use TestSelector::*;
 
 const TEST_PATTERNS: &[&str] = &["  def test_", "  it \"", "  it '", "  test \"", "  test '"];
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Eq)]
 pub struct RubyMinitest {}
 
 impl RubyMinitest {
