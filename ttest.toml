@@ -1,0 +1,9 @@
+[ruby-minitest]
+file-patterns = ['(.*(^|/)(spec|test)/(test_.+|.+_test|.+_spec))\.rb$']
+test-patterns = ['''\s*(test|it)(\(| )("|')(?P<name>.*)("|')''']
+namespace-patterns = ['^\s*(class|module)\s+(?P<name>\S+)', '''\s*(describe|feature)(\(| )("|')(?P<name>.*)("|')''']
+
+[ruby-rspec]
+file-patterns = ['(_spec\.rb|spec/.*\.feature)$']
+test-patterns = ['''\s*(test|it)(\(| )("|')(?P<name>.*)("|')''']
+namespace-patterns = ['^\s*(class|module)\s+(?P<name>\S+)', '''\s*(describe|feature)(\(| )("|')(?P<name>.*)("|')''']

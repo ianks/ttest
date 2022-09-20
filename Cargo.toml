@@ -1,0 +1,21 @@
+[package]
+name = "ttest"
+description = "Like vim-test, but for the terminal."
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+categories = ["command-line-utilities"]
+readme = "readme.md"
+repository = "https://github.com/ianks/ttest"
+
+[dependencies]
+bstr = "1.0.0"
+clap = { git = "https://github.com/clap-rs/clap", features = ["derive", "clap_derive"] }
+enum_dispatch = "0.3.8"
+lazy_static = "1.4.0"
+serde = "1.0.144"
+shell-words = "1.1.0"
+toml_edit = { version = "0.14.4", features = ["easy"] }
+
+[dev-dependencies]
+uuid = { version = "1.1.2", features = ["v4"] }
