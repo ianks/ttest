@@ -41,7 +41,8 @@ pub fn collect_commands(selectors: &[TestSelector]) -> Vec<Cow<'_, str>> {
         let matched = matched.iter().collect::<Vec<&TestSelector>>();
 
         adapter
-            .collect_commands(matched.as_slice()).unwrap_or_default()
+            .collect_commands(matched.as_slice())
+            .unwrap_or_default()
     });
 
     commands.collect::<Vec<_>>()

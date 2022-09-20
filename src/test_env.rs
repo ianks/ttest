@@ -25,8 +25,6 @@ impl TestEnv {
         std::fs::create_dir_all(&temp_dir).unwrap();
         std::env::set_current_dir(&temp_dir).unwrap();
 
-        
-
         Self { temp_dir, old_cwd }
     }
     pub fn write_file(&self, path: &str, contents: &str) {
